@@ -23,7 +23,7 @@ public class Logintest extends Config{
 			System.out.println("Browser couldnt open twitter page");
 		}
 	}
-	@Test(enabled=false)
+	@Test
 	public void tittletest() {
 		String title=driver.getTitle();
 		if(title.equalsIgnoreCase("https://twitter.com/")){
