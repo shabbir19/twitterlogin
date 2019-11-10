@@ -9,7 +9,7 @@ import helper.Twitterlandingpage;
 import locator.Twitterloc;
 import values.Twitterval;
 
-public class Logintest extends Config{
+public class Login extends Config{
 	Twitterlandingpage helper=new Twitterlandingpage();
 	Twitterloc twitloc=new Twitterloc();
 	Twitterval twitval=new Twitterval();
