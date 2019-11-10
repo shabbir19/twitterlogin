@@ -7,7 +7,6 @@
         <methods>
           <include name="browser"/>
           <include name="loginverify"/>
-          <include name="twitterlogin"/>
           <include name="afterEachMethod"/>
         </methods>
       </class> <!-- test.Logintest -->

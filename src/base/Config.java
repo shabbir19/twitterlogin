@@ -15,20 +15,20 @@ import util.Webdriverfunction;
 public class Config extends Webdriverfunction {
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun=true)
-	public void browser(String browsername){
-//		System.setProperty("webdriver.chrome.driver","C:\\Users\\shabbir.DESKTOP-DKE3O53\\Documents\\GitHub\\twitterlogin\\drivers\\chromedriver.exe");
-//		driver=new ChromeDriver();
-		if(browsername.equalsIgnoreCase("chrome")){
-			System.out.println("chrome is going to run");
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\shabbir.DESKTOP-DKE3O53\\Documents\\GitHub\\twitterlogin\\drivers\\chromedriver.exe");
-			driver=new ChromeDriver();
-			
-		}
-		else if(browsername.equalsIgnoreCase("firefox")){
-			System.out.println("firefox is going to run");
-			System.setProperty("webdriver.gecko.driver","C:\\Users\\shabbir.DESKTOP-DKE3O53\\Documents\\GitHub\\twitterlogin\\drivers\\geckodriver.exe");
-			driver=new FirefoxDriver();
-		}
+	public void browser(){
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\shabbir.DESKTOP-DKE3O53\\Documents\\GitHub\\twitterlogin\\drivers\\geckodriver.exe");
+		driver=new FirefoxDriver();
+//		if(browsername.equalsIgnoreCase("chrome")){
+//			System.out.println("chrome is going to run");
+//			System.setProperty("webdriver.chrome.driver","C:\\Users\\shabbir.DESKTOP-DKE3O53\\Documents\\GitHub\\twitterlogin\\drivers\\chromedriver.exe");
+//			driver=new ChromeDriver();
+//			
+//		}
+//		else if(browsername.equalsIgnoreCase("firefox")){
+//			System.out.println("firefox is going to run");
+//			System.setProperty("webdriver.gecko.driver","C:\\Users\\shabbir.DESKTOP-DKE3O53\\Documents\\GitHub\\twitterlogin\\drivers\\geckodriver.exe");
+//			driver=new FirefoxDriver();
+//		}
 		driver.get("https://twitter.com/");
 		pageload();
 		maxscreen();

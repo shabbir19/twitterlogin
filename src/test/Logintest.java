@@ -10,9 +10,30 @@ import locator.Twitterloc;
 import values.Twitterval;
 
 public class Logintest extends Config{
+	Twitterlandingpage helper=new Twitterlandingpage();
 	Twitterloc twitloc=new Twitterloc();
 	Twitterval twitval=new Twitterval();
-	Twitterlandingpage helper=new Twitterlandingpage();
+	@Test
+	public void twitterurltest(){
+		String url=driver.getCurrentUrl();
+		if(url.equalsIgnoreCase("https://twitter.com/")){
+			System.out.println("Browser opened twitter homepage");
+		}
+		else{
+			System.out.println("Browser couldnt open twitter page");
+		}
+	}
+	@Test(enabled=false)
+	public void tittletest() {
+		String title=driver.getTitle();
+		if(title.equalsIgnoreCase("https://twitter.com/")){
+			System.out.println("Browser opened twitter homepage");
+		}
+		else{
+			System.out.println("Browser couldnt open twitter page");
+		}
+		
+	}
 	@Test
 	public void twitterlogin(){
 		System.out.println("twitter login");
@@ -28,7 +49,18 @@ public class Logintest extends Config{
 		String actName=Name.trim();
 		System.out.println(actName);
 		Assert.assertEquals(actName, "Home");
-}
+		
+	}
+	@Test
+	public void loginwthinvalidpass(){
+		System.out.println("target login with invalid password");
+		ClickByXpath(twitloc.signin);
+		
+		TypeByXpath(twitloc.email,twitval.email_val);
+		TypeByXpath(twitloc.password,twitval.invalidpass_val);
+		ClickByXpath(twitloc.login);
+	}
+	
 
 
 }

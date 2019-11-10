@@ -35,15 +35,15 @@ public class Twitterlandingpage extends Webdriverfunction {
 		Assert.assertEquals(actName, "Home");
 		
 	}
-//	public void loginwthinvalidpass(){
-//		System.out.println("target login with invalid password");
-//		ClickByXpath(twitloc.signin);
-//		
-//		TypeByXpath(twitloc.email,twitval.email_val);
-//		TypeByXpath(twitloc.password,twitval.invalidpass_val);
-//		ClickByXpath(twitloc.login);
-//	}
-//	
+	public void loginwthinvalidpass(){
+		System.out.println("target login with invalid password");
+		ClickByXpath(twitloc.signin);
+		
+		TypeByXpath(twitloc.email,twitval.email_val);
+		TypeByXpath(twitloc.password,twitval.invalidpass_val);
+		ClickByXpath(twitloc.login);
+	}
+	
 
 }
 
