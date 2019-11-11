@@ -11,8 +11,10 @@
 	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/targetsignup/jars/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/targetsignup/jars/saxon-8.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/targetsignup/jars/SaxonLiaison.jar"/>
-	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/targetsignup/jars/testng-7.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Downloads/batik-plugin410/plugins/com.dlsc.batik_4.1.0/runtime.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/twitterlogin/jars/bsh-2.0b6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/twitterlogin/jars/jcommander-1.72.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shabbir.DESKTOP-DKE3O53/Documents/GitHub/twitterlogin/jars/testng-6.14.2.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
