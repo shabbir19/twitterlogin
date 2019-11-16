@@ -1,63 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="78121" started-at="2019-11-10T13:43:00 EST" finished-at="2019-11-10T13:44:18 EST">
+  <suite name="Default suite" duration-ms="38931" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:57:28 EST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="78121" started-at="2019-11-10T13:43:00 EST" finished-at="2019-11-10T13:44:18 EST">
-      <class name="test.Logintest">
-        <test-method status="PASS" signature="browser()[pri:0, instance:test.Logintest@57536d79]" name="browser" is-config="true" duration-ms="11285" started-at="2019-11-10T13:43:00 EST" finished-at="2019-11-10T13:43:12 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="FAIL" signature="loginverify()[pri:0, instance:test.Logintest@57536d79]" name="loginverify" duration-ms="20060" started-at="2019-11-10T13:43:12 EST" finished-at="2019-11-10T13:43:32 EST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="Default test" duration-ms="38931" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:57:28 EST">
+      <class name="testing.Login">
+        <test-method status="FAIL" signature="LogoVisibilityTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2]" name="LogoVisibilityTest" duration-ms="0" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:56:49 EST">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='react-root']/div/div/div/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/h2/span"}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-DKE3O53', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\shabbir.DESKTOP-DK...}, goog:chromeOptions: {debuggerAddress: localhost:50782}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7c6518d85245a95e2b7711b7b682791d
-*** Element info: {Using=xpath, value=//*[@id='react-root']/div/div/div/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/h2/span}]]>
+              <![CDATA[
+Cannot inject @Test annotated Method [LogoVisibilityTest] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='react-root']/div/div/div/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/h2/span"}
-  (Session info: chrome=78.0.3904.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-DKE3O53', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\shabbir.DESKTOP-DK...}, goog:chromeOptions: {debuggerAddress: localhost:50782}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7c6518d85245a95e2b7711b7b682791d
-*** Element info: {Using=xpath, value=//*[@id='react-root']/div/div/div/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/h2/span}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at test.Logintest.loginverify(Logintest.java:48)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [LogoVisibilityTest] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
+at org.testng.internal.Parameters.createParameters(Parameters.java:729)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -79,63 +47,79 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginverify -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:test.Logintest@57536d79]" name="afterEachMethod" is-config="true" duration-ms="658" started-at="2019-11-10T13:43:32 EST" finished-at="2019-11-10T13:43:32 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachMethod -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:test.Logintest@57536d79]" name="browser" is-config="true" duration-ms="10379" started-at="2019-11-10T13:43:32 EST" finished-at="2019-11-10T13:43:43 EST">
+        </test-method> <!-- LogoVisibilityTest -->
+        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="11420" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:57:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="loginwthinvalidpass()[pri:0, instance:test.Logintest@57536d79]" name="loginwthinvalidpass" duration-ms="1390" started-at="2019-11-10T13:43:43 EST" finished-at="2019-11-10T13:43:44 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwthinvalidpass -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:test.Logintest@57536d79]" name="afterEachMethod" is-config="true" duration-ms="691" started-at="2019-11-10T13:43:44 EST" finished-at="2019-11-10T13:43:45 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachMethod -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:test.Logintest@57536d79]" name="browser" is-config="true" duration-ms="9990" started-at="2019-11-10T13:43:45 EST" finished-at="2019-11-10T13:43:55 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="tittletest()[pri:0, instance:test.Logintest@57536d79]" name="tittletest" duration-ms="12" started-at="2019-11-10T13:43:55 EST" finished-at="2019-11-10T13:43:55 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tittletest -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:test.Logintest@57536d79]" name="afterEachMethod" is-config="true" duration-ms="648" started-at="2019-11-10T13:43:55 EST" finished-at="2019-11-10T13:43:56 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachMethod -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:test.Logintest@57536d79]" name="browser" is-config="true" duration-ms="10033" started-at="2019-11-10T13:43:56 EST" finished-at="2019-11-10T13:44:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="twitterlogin()[pri:0, instance:test.Logintest@57536d79]" name="twitterlogin" duration-ms="1410" started-at="2019-11-10T13:44:06 EST" finished-at="2019-11-10T13:44:07 EST">
+        <test-method status="PASS" signature="twitterlogin()[pri:0, instance:testing.Login@369f73a2]" name="twitterlogin" duration-ms="1862" started-at="2019-11-16T16:57:00 EST" finished-at="2019-11-16T16:57:02 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twitterlogin -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:test.Logintest@57536d79]" name="afterEachMethod" is-config="true" duration-ms="696" started-at="2019-11-10T13:44:07 EST" finished-at="2019-11-10T13:44:08 EST">
+        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="687" started-at="2019-11-16T16:57:02 EST" finished-at="2019-11-16T16:57:03 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachMethod -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:test.Logintest@57536d79]" name="browser" is-config="true" duration-ms="10144" started-at="2019-11-10T13:44:08 EST" finished-at="2019-11-10T13:44:18 EST">
+        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="10607" started-at="2019-11-16T16:57:03 EST" finished-at="2019-11-16T16:57:13 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="twitterurltest()[pri:0, instance:test.Logintest@57536d79]" name="twitterurltest" duration-ms="6" started-at="2019-11-10T13:44:18 EST" finished-at="2019-11-10T13:44:18 EST">
+        <test-method status="PASS" signature="loginwthinvalidpass()[pri:0, instance:testing.Login@369f73a2]" name="loginwthinvalidpass" duration-ms="1721" started-at="2019-11-16T16:57:13 EST" finished-at="2019-11-16T16:57:15 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- twitterurltest -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:test.Logintest@57536d79]" name="afterEachMethod" is-config="true" duration-ms="648" started-at="2019-11-10T13:44:18 EST" finished-at="2019-11-10T13:44:18 EST">
+        </test-method> <!-- loginwthinvalidpass -->
+        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="696" started-at="2019-11-16T16:57:15 EST" finished-at="2019-11-16T16:57:16 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachMethod -->
-      </class> <!-- test.Logintest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="10439" started-at="2019-11-16T16:57:16 EST" finished-at="2019-11-16T16:57:26 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="twitterurltest()[pri:0, instance:testing.Login@369f73a2]" name="twitterurltest" duration-ms="9" started-at="2019-11-16T16:57:26 EST" finished-at="2019-11-16T16:57:26 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- twitterurltest -->
+        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="1421" started-at="2019-11-16T16:57:26 EST" finished-at="2019-11-16T16:57:28 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method status="SKIP" signature="LogoEnableTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2]" name="LogoEnableTest" duration-ms="0" started-at="2019-11-16T16:57:28 EST" depends-on-methods="testing.Login.LogoVisibilityTest" finished-at="2019-11-16T16:57:28 EST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Login.LogoEnableTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Login.LogoEnableTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoEnableTest -->
+      </class> <!-- testing.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
