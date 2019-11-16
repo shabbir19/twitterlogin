@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38931" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:57:28 EST">
+  <suite name="Suite" duration-ms="39204" started-at="2019-11-16T17:08:33 EST" finished-at="2019-11-16T17:09:12 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38931" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:57:28 EST">
+    <test name="testing" duration-ms="39204" started-at="2019-11-16T17:08:33 EST" finished-at="2019-11-16T17:09:12 EST">
       <class name="testing.Login">
-        <test-method status="FAIL" signature="LogoVisibilityTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2]" name="LogoVisibilityTest" duration-ms="0" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:56:49 EST">
+        <test-method status="FAIL" signature="LogoVisibilityTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2]" name="LogoVisibilityTest" duration-ms="0" started-at="2019-11-16T17:08:33 EST" finished-at="2019-11-16T17:08:33 EST">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -51,43 +51,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoVisibilityTest -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="11420" started-at="2019-11-16T16:56:49 EST" finished-at="2019-11-16T16:57:00 EST">
+        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="11782" started-at="2019-11-16T17:08:33 EST" finished-at="2019-11-16T17:08:45 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="twitterlogin()[pri:0, instance:testing.Login@369f73a2]" name="twitterlogin" duration-ms="1862" started-at="2019-11-16T16:57:00 EST" finished-at="2019-11-16T16:57:02 EST">
+        <test-method status="PASS" signature="twitterlogin()[pri:0, instance:testing.Login@369f73a2]" name="twitterlogin" duration-ms="2030" started-at="2019-11-16T17:08:45 EST" finished-at="2019-11-16T17:08:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twitterlogin -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="687" started-at="2019-11-16T16:57:02 EST" finished-at="2019-11-16T16:57:03 EST">
+        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="711" started-at="2019-11-16T17:08:47 EST" finished-at="2019-11-16T17:08:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachMethod -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="10607" started-at="2019-11-16T16:57:03 EST" finished-at="2019-11-16T16:57:13 EST">
+        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="10560" started-at="2019-11-16T17:08:47 EST" finished-at="2019-11-16T17:08:58 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="loginwthinvalidpass()[pri:0, instance:testing.Login@369f73a2]" name="loginwthinvalidpass" duration-ms="1721" started-at="2019-11-16T16:57:13 EST" finished-at="2019-11-16T16:57:15 EST">
+        <test-method status="PASS" signature="loginwthinvalidpass()[pri:0, instance:testing.Login@369f73a2]" name="loginwthinvalidpass" duration-ms="1983" started-at="2019-11-16T17:08:58 EST" finished-at="2019-11-16T17:09:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwthinvalidpass -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="696" started-at="2019-11-16T16:57:15 EST" finished-at="2019-11-16T16:57:16 EST">
+        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="746" started-at="2019-11-16T17:09:00 EST" finished-at="2019-11-16T17:09:01 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachMethod -->
-        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="10439" started-at="2019-11-16T16:57:16 EST" finished-at="2019-11-16T16:57:26 EST">
+        <test-method status="PASS" signature="browser()[pri:0, instance:testing.Login@369f73a2]" name="browser" is-config="true" duration-ms="10520" started-at="2019-11-16T17:09:01 EST" finished-at="2019-11-16T17:09:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="twitterurltest()[pri:0, instance:testing.Login@369f73a2]" name="twitterurltest" duration-ms="9" started-at="2019-11-16T16:57:26 EST" finished-at="2019-11-16T16:57:26 EST">
+        <test-method status="PASS" signature="twitterurltest()[pri:0, instance:testing.Login@369f73a2]" name="twitterurltest" duration-ms="18" started-at="2019-11-16T17:09:11 EST" finished-at="2019-11-16T17:09:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twitterurltest -->
-        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="1421" started-at="2019-11-16T16:57:26 EST" finished-at="2019-11-16T16:57:28 EST">
+        <test-method status="PASS" signature="afterEachMethod()[pri:0, instance:testing.Login@369f73a2]" name="afterEachMethod" is-config="true" duration-ms="732" started-at="2019-11-16T17:09:11 EST" finished-at="2019-11-16T17:09:12 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachMethod -->
-        <test-method status="SKIP" signature="LogoEnableTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2]" name="LogoEnableTest" duration-ms="0" started-at="2019-11-16T16:57:28 EST" depends-on-methods="testing.Login.LogoVisibilityTest" finished-at="2019-11-16T16:57:28 EST">
+        <test-method status="SKIP" signature="LogoEnableTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2]" name="LogoEnableTest" duration-ms="0" started-at="2019-11-16T17:09:12 EST" depends-on-methods="testing.Login.LogoVisibilityTest" finished-at="2019-11-16T17:09:12 EST">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method Login.LogoEnableTest(java.lang.String)[pri:0, instance:testing.Login@369f73a2] depends on not successfully finished methods]]>
@@ -120,6 +120,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- LogoEnableTest -->
       </class> <!-- testing.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- testing -->
+  </suite> <!-- Suite -->
 </testng-results>
